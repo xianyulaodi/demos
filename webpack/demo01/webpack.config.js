@@ -16,4 +16,12 @@ module.exports = {
             chunksSortMode: 'none' //如使用webpack4将该配置项设置为'none'
         }),
     ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            }
+        ]
+    }
 };
